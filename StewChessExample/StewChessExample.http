@@ -1,0 +1,6 @@
+@StewChessExample_HostAddress = http://localhost:5241
+
+GET {{StewChessExample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
