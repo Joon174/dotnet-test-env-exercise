@@ -76,6 +76,9 @@ namespace StewChessExample.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("gameId")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ChessGameEventId");

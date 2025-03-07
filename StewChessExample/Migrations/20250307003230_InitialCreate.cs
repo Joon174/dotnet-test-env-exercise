@@ -33,6 +33,7 @@ namespace StewChessExample.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    gameId = table.Column<int>(type: "integer", nullable: false),
                     Piece = table.Column<string>(type: "text", nullable: false),
                     FromPosition = table.Column<string>(type: "text", nullable: false),
                     ToPosition = table.Column<string>(type: "text", nullable: false),

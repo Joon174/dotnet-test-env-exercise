@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace StewChessExample.Migrations
 {
     [DbContext(typeof(ChessGameDbContext))]
-    [Migration("20250306081910_InitialCreate")]
+    [Migration("20250307003230_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -78,6 +78,9 @@ namespace StewChessExample.Migrations
                     b.Property<string>("Turn")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("gameId")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 

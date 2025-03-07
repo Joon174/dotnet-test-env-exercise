@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StewChessExample")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f105e7af7511c7c08103b4997e7a0efac33aac69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d28b2e35aac3ef7f12f2507ef38abd37023a5b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("StewChessExample")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StewChessExample")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ChessGame.Models;
-                                                                                                                                                            namespace ChessGame.Data
+
+namespace ChessGame.Data
 {
     public class ChessGameDbContext : DbContext
     {

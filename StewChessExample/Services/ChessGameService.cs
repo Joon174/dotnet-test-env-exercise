@@ -31,7 +31,7 @@ namespace ChessGame.Services
 
 	    var moveEvent = new PieceMoveEvent
 	    {
-		Id = gameId,
+		gameId = gameId,
 		Piece = piece,
 		FromPosition = fromPosition,
 		ToPosition = toPosition,

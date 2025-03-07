@@ -23,14 +23,14 @@ namespace ChessGame.Controllers
 	    return Ok(game);
 	}
 
-	[HttpPost("move/{gameId}")]
+	[HttpPost("move/game/{gameId}")]
 	public async Task<ActionResult> MovePiece(int gameId, [FromBody] MovePieceCommand command)
 	{
-            await _service.MovePieceEventAsync(gameId, command.Piece, command.From, command.To, command.Turn);
+            await _service.MovePieceEventAsync(gameId, command.Piece, command.FromPosition, command.ToPosition, command.Turn);
             return NoContent();
 	}
 
-	[HttpPost("history/{gameId}")]
+	[HttpGet("history/game/{gameId}")]
 	public async Task<ActionResult<List<PieceMoveEvent>>> GetMoveHistory(int gameId)
 	{
 	    var history = await _service.GetMoveHistoryAsync(gameId);

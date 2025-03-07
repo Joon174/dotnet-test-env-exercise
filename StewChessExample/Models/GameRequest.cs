@@ -9,8 +9,8 @@ namespace ChessGame.GameRequests
     public class MovePieceCommand
     {
         public string Piece { get; set; } = "Pawn";
-        public string From { get; set; } = "e2";
-        public string To { get; set; } = "e4";
+        public string FromPosition { get; set; } = "e2";
+        public string ToPosition { get; set; } = "e4";
         public string Turn { get; set; } = "1";
     }
 }

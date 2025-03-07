@@ -1,0 +1,6 @@
+curl -X POST http://localhost:5241/api/ChessGame/start -H "Content-Type:
+ application/json" -d '{"WhitePlayer": "Kazuya", "BlackPlayer": "Heihachi"}'
+
+curl -X POST http://localhost:5241/api/ChessGame/move/1 -H "Content-Type: application/json" -d '{"Piece": "Pawn", "FromPosition": "d2", "ToPosition": "d4", "Turn": "White"}'
+
+curl -X GET http://localhost:5241/api/ChessGame/history/1

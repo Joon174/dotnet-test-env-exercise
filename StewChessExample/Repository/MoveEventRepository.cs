@@ -21,7 +21,7 @@ namespace ChessGame.Repositories
 
 	public async Task<List<PieceMoveEvent>> GetMoveEventsByGameIdAsync(int gameId)
 	{
-	    return await _context.PieceMoveEvents.Where(g => g.Id == gameId).OrderBy(m => m.Timestamp).ToListAsync();
+	    return await _context.PieceMoveEvents.Where(g => g.gameId == gameId).OrderBy(m => m.Timestamp).ToListAsync();
 	}
     }
 }
